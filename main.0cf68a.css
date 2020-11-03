@@ -969,11 +969,15 @@ html {
 }
 
 .left-col #header a {
-  color: #696969
+  /* color: #696969 */
+  color: #9e54cc;
+  font-size: 14px;
 }
 
 .left-col #header a:hover {
-  color: #b0a0aa
+  /* color: #b0a0aa; */
+  color: #08c;
+  font-weight: bold;
 }
 
 .left-col #header .header-subtitle {
@@ -3124,9 +3128,11 @@ pre .id {
 }
 
 #footer {
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #9e54cc;
   font-family: Menlo, Monaco, Andale Mono, lucida console, Courier New, monospace;
-  text-shadow: 0 1px #fff;
+  text-shadow: 0 1px #000;
   position: absolute;
   bottom: 30px;
   opacity: .6;
