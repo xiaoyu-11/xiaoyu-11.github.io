@@ -2255,23 +2255,49 @@ pre .id {
 .article-more-link {
   margin-top: 0;
   text-align: left;
-  float: right
+  float: right;
+  overflow: hidden;
 }
 
 .article-more-link a {
   /* background: #4d4d4d; */
   background: #9e54cc;
-  border-radius: 15px !important;
   color: #fff;
   font-size: 12px;
   padding: 5px 8px;
   line-height: 16px;
-  border-radius: 2px;
-  transition: background .3s
+  transition: background .3s;
+  position: relative;
+  border-radius: 5px;
 }
-
-.article-more-link a:hover {
-  background: #3c3c3c
+.article-more-link a::after{
+  content: "";
+  height: 1px;
+  width: 100px;
+  background: linear-gradient(to right,rgba(255,255,255,0.1),#fff,rgba(255,255,255,0.1));
+  position: absolute;
+  bottom: 1px;
+  left: 100px;
+  transition: 1s;
+}
+.article-more-link a::before{
+  content: "";
+  height: 1px;
+  width: 100px;
+  background: linear-gradient(to right,rgba(255,255,255,0.1),#fff,rgba(255,255,255,0.1));
+  position: absolute;
+  top: 0;
+  left: -100px;
+  transition: 1s;
+}
+.article-more-link a:hover{
+  background: #0088cc;
+}
+.article-more-link a:hover::after {
+  left: -100px;
+}
+.article-more-link a:hover::before {
+  left: 100px;
 }
 
 .article-more-link a.hidden {

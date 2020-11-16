@@ -16,7 +16,7 @@
 <meta property="og:description" content="每天学一点，植发多一点">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-11-03T08:19:41.000Z">
-<meta property="article:modified_time" content="2020-11-03T08:21:18.255Z">
+<meta property="article:modified_time" content="2020-11-04T01:13:44.245Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="前端面试">
 <meta property="article:tag" content="CSS">
@@ -177,6 +177,7 @@
 <h2 id="5-请写出多种等高布局"><a href="#5-请写出多种等高布局" class="headerlink" title="5.请写出多种等高布局"></a>5.请写出多种等高布局</h2><p>在列的父元素上使用这个背景图进行 Y 轴的铺放，从而实现一种等高列的假像<br>模仿表格布局等高列效果：兼容性不好，在 ie6-7 无法正常运行<br>css3 flexbox 布局： .container{display: flex; align-items: stretch;}</p>
 <h2 id="5-圣杯布局的实现原理？"><a href="#5-圣杯布局的实现原理？" class="headerlink" title="5.圣杯布局的实现原理？"></a>5.圣杯布局的实现原理？</h2><p>要求：三列布局；中间主体内容前置，且宽度自适应；两边内容定宽<br>好处：重要的内容放在文档流前面可以优先渲染<br>原理：利用相对定位、浮动、负边距布局，而不添加额外标签</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"> .container &#123;</span><br><span class="line">     padding-left: 150px;</span><br><span class="line">     padding-right: 190px;</span><br><span class="line">&#125;</span><br><span class="line"> .main &#123;</span><br><span class="line">     <span class="built_in">float</span>: left;</span><br><span class="line">     width: 100%;</span><br><span class="line">&#125;</span><br><span class="line"> .left &#123;</span><br><span class="line">     <span class="built_in">float</span>: left;</span><br><span class="line">     width: 190px;</span><br><span class="line">     margin-left: -100%;</span><br><span class="line">     position: relative;</span><br><span class="line">     left: -150px;</span><br><span class="line">&#125;</span><br><span class="line"> .right &#123;</span><br><span class="line">     <span class="built_in">float</span>: left;</span><br><span class="line">     width: 190px;</span><br><span class="line">     margin-left: -190px;</span><br><span class="line">     position: relative;</span><br><span class="line">     right: -190px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
       
 
       
@@ -450,11 +451,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
+                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -463,6 +464,22 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">JQuery</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">axios</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">ajax</a>
               </li>
             
             <div class="clearfix"></div>
